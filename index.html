@@ -1,0 +1,147 @@
+<html>
+
+<body >
+    <div id="nav">
+
+        <img id="side"src="https://drive.google.com/uc?export=view&id=1YUrs48J2wnpMgzNPcgBvuAPvLJxMqoBq" alt="">
+        <img onclick="bringfeepage()" id="but1"src="https://drive.google.com/uc?export=view&id=1hnAcAQg8WplAbu_yg5G9Y10qFgGK3Do-" alt="">   
+    </div>
+    
+    <div>
+        <img id="image" onclick="dragback()" src="https://drive.google.com/uc?export=view&id=1r9vQzmC7hxCmhrhhwsQZAUvhEmcinK6_" alt="">
+       
+        <img onclick="profileopen()" id="icon" src="https://drive.google.com/uc?export=view&id=1Das5tK-e8wPpak_TGTUsO_chE--Rbtl8" alt="">
+       
+    </div>
+    <div>
+        <img id="but" onclick="bringit()" src="https://drive.google.com/uc?export=view&id=1BBxb0hLG5fmkLaqCNWLEGFsvHxxsLtvA" alt="">
+        <img onclick="bringfeepage()" id="busfeetop" src="https://drive.google.com/uc?export=view&id=1dsbzu2jNr_yDIFHbaGxrHjfBhAA0ttBJ" alt="">
+    </div>
+    <div id="feepage1">
+        <img id = "feepaidimage" src="https://drive.google.com/uc?export=view&id=1t194byJiLrlj-jIaDMqSNbg3tdplJIVV" alt="">
+        <img onclick="bringbackhome()" id="back" src="https://drive.google.com/uc?export=view&id=11KgGjTCIQrJmZWJFD00SINNX7zqxhBFX" alt="">
+    </div>
+    <div id="pop">
+        <img id="profile" src="https://drive.google.com/uc?export=view&id=1Das5tK-e8wPpak_TGTUsO_chE--Rbtl8" alt="">
+    </div>
+
+
+  
+  
+</body>
+</html>
+<script>
+    function bringit(){
+        let menu = document.getElementById("nav");
+        menu.style.left="0px";
+        let but = document.getElementById("but");
+        but.style.width="0px";
+        let but2 = document.getElementById("busfeetop");
+        but2.style.width = "0";
+        let icon = document.getElementById("icon");
+        icon.style.width="0";
+   
+    }
+    function dragback(){
+        let menu = document.getElementById("nav");
+        menu.style.left="-300px";
+        let but = document.getElementById("but");
+        but.style.width="50px";
+        let but2 = document.getElementById("busfeetop");
+        but2.style.width = "100";
+        let screen = document.getElementById("profile")
+        screen.style.left = "100%"
+        let icon = document.getElementById("icon");
+        icon.style.width="50px";
+       
+    }
+    function bringfeepage(){
+        let feepage = document.getElementById("feepage1");
+        feepage.style.left = "0";
+        let bg = document.getElementById("image");
+        bg.style.filter="brightness(0%);"
+     
+        
+    }
+    function bringbackhome(){
+        let feepage = document.getElementById("feepage1");
+        feepage.style.left = "600";
+      
+    }
+    function profileopen(){
+        let screen = document.getElementById("profile");
+        screen.style.left="9%";
+        
+    }
+</script>
+<style>
+    #icon{
+        transition: 0.1s;
+    }
+    #profile{
+        position: absolute;
+        top: 20%;
+        left:100%;
+        width: 250;
+    }
+    #icon{
+        width: 50;
+        position: absolute;
+        top:35%;
+        left:6%;
+
+    }
+    #busfeetop{
+        position: absolute;
+        top:10.2%;
+        width: 100;
+        left:2%
+    }
+    #back{
+        position: absolute;
+        left: 1px;
+        width: 50;
+
+    }
+    #feepage1{
+        position: absolute;
+        top:0px;
+        left: 600;
+        transition: 0.1s;
+    }
+    #feepaidimage{
+        width: 300;
+    }
+    #but1{
+        position:absolute;
+        top:86%;
+        left:1%;
+        width: 200;
+    }
+    #nav{
+        position: absolute;
+        left: -300;
+        transition: 0.6s;
+    }
+    #but{
+       position: absolute;
+       top:10px;
+       width:50px; 
+    }
+    #side{
+        width: 200; 
+    }
+
+  #e{
+    position: absolute;
+    top: 35px;
+  }
+  #image{
+    width: 300;
+  }
+  #side{
+    width: 200;
+    
+  }
+
+</style>
